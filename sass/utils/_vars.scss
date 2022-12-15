@@ -20,8 +20,7 @@ li {
 }
 img {
     display: block;
-    width: 100%;
-    min-width: 100%;
+    max-width: 100%;
     height: auto;
 }
 a {
@@ -85,7 +84,7 @@ button {
     line-height: 1.19;
     letter-spacing: 0.03em;
     text-decoration: none;
-    margin-right: 93px;
+    
 }
  .visually-hidden {
      position: absolute;
