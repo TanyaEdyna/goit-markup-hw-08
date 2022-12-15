@@ -47,7 +47,7 @@
         flex-direction: row;
         flex-wrap: wrap;
         gap: 30px;
-        width: calc(100% - 30px);
+        width: 100%;
     }
 }
 .portfolio__item {
@@ -69,6 +69,11 @@
             @media screen and (min-width: 1200px) {
                 width: calc((100% - 60px)/3);
                         }
+}
+.portfolio__link {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 .portfolio__description-wrap {
     position: relative;
@@ -116,4 +121,5 @@
     border-bottom: 1px solid var(--border-line-portfolio);
     border-left: 1px solid var(--border-line-portfolio);
     padding: 20px 0 20px 23px;
+    flex-grow: 1;
 }
