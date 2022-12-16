@@ -7,6 +7,9 @@
     font-family: 'Raleway', sans-serif;
 }
 /* navigation */
+.navigation {
+    display: none;
+}
 .navigation__site {
     display: flex;
     .current {
@@ -18,8 +21,9 @@
     margin-right: 50px;
 }
 .navigation__contacts {
-    display: flex;
-    margin-left: auto;
+    display: none;
+    // display: flex;
+    // margin-left: auto;
 }
 .link {
     color: var(--title-color);
