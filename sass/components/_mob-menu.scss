@@ -6,19 +6,25 @@
     position: fixed;
     top: 0;
     left: 0;
+    margin: 0 auto;
+    display: flex; 
+    flex-direction: column;
     width: 100vw;
     height: 100vh;
     background-color: var(--white-color);
     padding: 48px 40px;
+    z-index: 1;
 }
 .menu-close {
-    display: block;
+    display: flex;
+    position: absolute;
+    right: 15px;
+    top: 10px;
     margin-left: auto;
     border: none;
     background-color: transparent;
 
 }
-
 .mob__menu-list {
     display: flex;
     flex-direction: column;
@@ -35,12 +41,16 @@
     line-height: 1.17;
     letter-spacing: 0.02em;
    }
-.mob__menu-contacts {
+.mob__wrap {
+    margin-top: auto;
+}
+.mob__contacts-list {
     display: flex;
     flex-direction: column;
-    margin-bottom: 64px;
+    gap: 32px;
+    // margin-bottom: 64px;
 }
-.mob__menu-tel {
+.mob__contacts-tel {
     font-weight: 500;
     font-size: 34px;
     line-height: 1.17;
@@ -48,7 +58,7 @@
     color: var(--text-color);
     margin-bottom: 32px;
 }
-.mob__menu-mail {
+.mob__contacts-mail {
     font-weight: 500;
     font-size: 24px;
     line-height: 1.16;
@@ -58,6 +68,7 @@
 .mob__soc-list {
     display: flex;
     flex-direction: row;
+    // margin-bottom: auto;
 }
 
 .mob__soc-item {
