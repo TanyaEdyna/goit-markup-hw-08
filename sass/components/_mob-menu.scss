@@ -1,7 +1,13 @@
 
-.menu-open {
+.mob__menu-open, 
+.mob__menu-close {
+    display: block;
     margin-left: auto;
-}
+    border: 0;
+    background-color: transparent;
+   
+ }
+
 .mob__menu {
     position: fixed;
     top: 0;
@@ -14,6 +20,9 @@
     background-color: var(--white-color);
     padding: 48px 40px;
     z-index: 1;
+    @media screen and (max-width: 480px) {
+  display: none;
+    }
 }
 .menu-close {
     display: flex;
@@ -68,7 +77,7 @@
 .mob__soc-list {
     display: flex;
     flex-direction: row;
-    // margin-bottom: auto;
+    margin-top: 64px;
 }
 
 .mob__soc-item {
