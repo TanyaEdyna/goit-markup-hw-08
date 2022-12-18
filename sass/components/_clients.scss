@@ -52,8 +52,12 @@
         }
  }
  .client__icon {
+    margin: 16px 52px;
      fill: currentColor;
     &:hover {
             fill: var(--accent-color);
         }
+    @media screen and (max-width:1199px) {
+        margin: 16px 0;
+    }
  }

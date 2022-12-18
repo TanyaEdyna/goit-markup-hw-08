@@ -606,10 +606,16 @@ button {
 }
 
 .client__icon {
+  margin: 16px 52px;
   fill: currentColor;
 }
 .client__icon:hover {
   fill: var(--accent-color);
+}
+@media screen and (max-width: 1199px) {
+  .client__icon {
+    margin: 16px 0;
+  }
 }
 
 .footer {
@@ -1338,15 +1344,13 @@ button {
   border: 0;
   background-color: transparent;
 }
-
-.mob__menu-close {
-  display: block;
-  margin-left: auto;
-  border: 0;
-  background-color: transparent;
+@media screen and (min-width: 768px) {
+  .mob__menu-open {
+    display: none;
+  }
 }
 
-.mob__menu {
+.mobile__menu {
   position: fixed;
   top: 0;
   left: 0;
@@ -1363,22 +1367,17 @@ button {
   background-color: var(--white-color);
   padding: 48px 40px;
   z-index: 1;
-}
-@media screen and (max-width: 480px) {
-  .mob__menu {
-    display: none;
-  }
+  overflow: auto;
 }
 
-.menu-close {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.mob__menu-close {
   position: absolute;
-  right: 15px;
-  top: 10px;
+  top: 0;
+  right: 0;
+  padding: 0;
+  padding: 10px 15px 0 0;
   margin-left: auto;
-  border: none;
+  border: 0;
   background-color: transparent;
 }
 
