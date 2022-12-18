@@ -1,13 +1,21 @@
 
-.mob__menu-open, 
-.mob__menu-close {
+.mob__menu-open {
+    position: absolute;
+    display: block;
+    top: 10px;
+    right: 15px;
+    margin-left: auto;
+    padding: 0;
+    border: 0;
+    background-color: transparent;
+ }
+ .mob__menu-close {
     display: block;
     margin-left: auto;
     border: 0;
     background-color: transparent;
-   
- }
 
+ }
 .mob__menu {
     position: fixed;
     top: 0;
