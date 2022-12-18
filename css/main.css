@@ -99,6 +99,11 @@ button {
   letter-spacing: 0.03em;
   text-decoration: none;
 }
+@media screen and (min-width: 768px) {
+  .logo {
+    margin-right: 93px;
+  }
+}
 
 .visually-hidden {
   position: absolute;
@@ -154,6 +159,19 @@ button {
 
 .navigation__contacts {
   display: none;
+}
+@media screen and (min-width: 768px) {
+  .navigation__contacts {
+    display: block;
+    margin-left: auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .navigation__contacts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .link {
@@ -606,7 +624,7 @@ button {
 }
 
 .client__icon {
-  margin: 16px 52px;
+  margin: 16px 0;
   fill: currentColor;
 }
 .client__icon:hover {
@@ -1151,7 +1169,7 @@ button {
 }
 
 .modal-input {
-  width: 448px;
+  width: 100%;
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -1181,7 +1199,7 @@ button {
 }
 
 .modal-message {
-  width: 448px;
+  width: 100%;
   height: 120px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -1282,21 +1300,33 @@ button {
 .checkbox-text {
   text-align: center;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 2;
+  font-size: 12px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
   color: var(--text-color);
   margin-right: 4px;
 }
+@media screen and (min-width: 1200px) {
+  .checkbox-text {
+    font-size: 14px;
+    line-height: 2;
+  }
+}
 
 .text-link {
   font-weight: 400;
-  font-size: 14px;
-  line-height: 2;
+  font-size: 12px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
   color: var(--accent-color);
+}
+@media screen and (min-width: 1200px) {
+  .text-link {
+    font-size: 14px;
+    line-height: 2;
+  }
 }
 
 .chekbox-icon {
@@ -1335,7 +1365,6 @@ button {
 }
 
 .mob__menu-open {
-  position: absolute;
   display: block;
   top: 10px;
   right: 15px;
@@ -1368,6 +1397,11 @@ button {
   padding: 48px 40px;
   z-index: 1;
   overflow: auto;
+}
+@media screen and (min-width: 767px) {
+  .mobile__menu {
+    display: none;
+  }
 }
 
 .mob__menu-close {
