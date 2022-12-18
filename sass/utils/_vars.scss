@@ -45,7 +45,6 @@ button {
 }
 .container {
     width: 100%;
-    // width: 1200px;
     margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
@@ -84,9 +83,9 @@ button {
     line-height: 1.19;
     letter-spacing: 0.03em;
     text-decoration: none;
-    @media screen and (min-width:768px) {
-        margin-right: 93px;
-    }
+    // @media screen and (min-width:768px) {
+    //     margin-right: 93px;
+    // }
     
 }
  .visually-hidden {
